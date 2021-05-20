@@ -26,7 +26,7 @@ function checkYuGiOh(n) {
     return array;
 }
 
-let case1 = checkYuGiOh(7);
+let case1 = checkYuGiOh(10);
 let case2 = checkYuGiOh("5");
 let case3 = checkYuGiOh("fizzbuzz");
 
