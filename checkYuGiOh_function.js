@@ -5,8 +5,8 @@ function checkYuGiOh(n) {
         return `invalid paramter: "${n}"`; //checking if a valid number was given
     }
 
-    for (let i = 1; i <= n; i++) { //this loops through each number of the given range, checks if they satisfy the                                       
-        var character = []; //multiples' conditions and assigns a character accordingly
+    for (let i = 1; i <= n; i++) {        //this loops through each number of the given range, checks if they satisfy the                                       
+        var character = [];               //multiples' conditions and assigns a character accordingly
         if (i % 2 == 0) {
             character.push("Yu");
         }
@@ -16,7 +16,7 @@ function checkYuGiOh(n) {
         if (i % 5 == 0) {
             character.push("Oh")
         }
-        if (character.length > 0) { //the character's list is greater than 1, therefore it satisfies the multiples's conditions                                    
+        if (character.length > 0) {                    //the character's list is greater than 1, therefore it satisfies the multiples's conditions                                    
             var joinedCharacter = character.join("-"); //and can be moved to the main array with a '-' demarcation when necessary
             array.push(joinedCharacter);
         } else {
